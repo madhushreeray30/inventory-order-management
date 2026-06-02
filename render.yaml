@@ -1,0 +1,24 @@
+# Render Blueprint - deploys the backend and a free PostgreSQL database.
+# In the Render dashboard: New > Blueprint, point it at this repo.
+services:
+  - type: web
+    name: inventory-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: inventory-db
+          property: connectionString
+      # Set this to your deployed Vercel URL after the frontend is live.
+      - key: CORS_ORIGINS
+        sync: false
+
+databases:
+  - name: inventory-db
+    plan: free
+    databaseName: inventory
+    user: inventory
