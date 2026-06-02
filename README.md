@@ -6,10 +6,10 @@ and everything runs with Docker Compose.
 
 ## Submission links
 
-- **GitHub repo:** `<your-repo-url>`
-- **Live frontend:** `<your-vercel-url>`
-- **Live backend API:** `<your-render-url>` (docs at `<your-render-url>/docs`)
-- **Docker Hub (backend image):** `<your-dockerhub-image>`
+- **GitHub repo:** https://github.com/madhushreeray30/inventory-order-management
+- **Live frontend:** https://inventory-order-management-madhushreeray30s-projects.vercel.app
+- **Live backend API:** https://inventory-backend-egns.onrender.com (docs at https://inventory-backend-egns.onrender.com/docs)
+- **Docker Hub (backend image):** https://hub.docker.com/r/madhushreeray3004/inventory-backend
 
 ## Tech stack
 
